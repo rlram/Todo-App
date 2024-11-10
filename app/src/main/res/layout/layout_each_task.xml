@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingStart="20dp"
-    android:paddingEnd="20dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     android:layout_marginTop="5dp"
@@ -23,7 +23,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
         android:layout_gravity="center">
@@ -38,22 +38,21 @@
             android:id="@+id/tvTaskTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginTop="2dp"/>
+            android:textSize="12sp" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/ivEdit"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_gravity="center"
         android:contentDescription="@string/edit"
         app:srcCompat="@drawable/icon_edit" />
 
     <ImageView
         android:id="@+id/ivDelete"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
         android:contentDescription="@string/delete"
