@@ -44,16 +44,16 @@
 
     <ImageView
         android:id="@+id/ivEdit"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         android:contentDescription="@string/edit"
         app:srcCompat="@drawable/icon_edit" />
 
     <ImageView
         android:id="@+id/ivDelete"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
         android:contentDescription="@string/delete"
