@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
         linearLayoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = linearLayoutManager
-        adapter = TaskAdapter(taskList)
+        adapter = TaskAdapter(this, taskList)
         recyclerView.adapter = adapter
 
     }
