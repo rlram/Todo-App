@@ -69,5 +69,20 @@ class TaskAdapter(private val context: Context, private val list: ArrayList<Task
             list.removeAt(holder.adapterPosition)
             notifyItemRemoved(holder.adapterPosition)
         }
+
+        if (task.isComplete == 1) {
+            holder.checkBox.isChecked = true
+            holder.tvTaskName.paintFlags = holder.tvTaskName.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+        }
+
+        holder.checkBox.setOnClickListener {
+            if (holder.checkBox.isChecked) {
+                dbHandler.updateTask(Task(task.id, task.taskName, task.taskTime, 1))
+                holder.tvTaskName.paintFlags = holder.tvTaskName.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+            } else {
+                dbHandler.updateTask((Task(task.id, task.taskName, task.taskTime, 0)))
+                holder.tvTaskName.paintFlags = holder.tvTaskName.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
+            }
+        }
     }
 }
