@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Todo</string>
+    <string name="today">Today</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add_task">Add Task</string>
+    <string name="back">Back</string>
+    <string name="task_name">Task Name</string>
+    <string name="update_task">Update task</string>
 </resources>
