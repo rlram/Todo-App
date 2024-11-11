@@ -60,6 +60,7 @@ class TaskAdapter(private val context: Context, private val list: ArrayList<Task
         btnUpdateTask.setOnClickListener {
             val taskName = etUpdateTask.text.toString()
             dbHandler.updateTask(Task(task.id, taskName, task.taskTime, task.isComplete))
+            list[holder.adapterPosition] = Task(task.id, taskName, task.taskTime, task.isComplete)
             notifyItemChanged(holder.adapterPosition)
             dialog.dismiss()
         }
